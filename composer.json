@@ -1,0 +1,34 @@
+{
+    "name": "fatindeed/emoji-helper",
+    "description": "A middleware for Laravel or Lumen to remove emoji characters.",
+    "license": "MIT",
+    "homepage": "https://github.com/fatindeed/emoji-helper",
+    "keywords": ["emoji", "laravel", "lumen", "middleware"],
+    "authors": [
+        {
+            "name": "James Zhu",
+            "homepage": "https://github.com/fatindeed"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0 || ^6.0 || ^7.0 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fatindeed\\EmojiHelper\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

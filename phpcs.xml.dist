@@ -10,6 +10,9 @@
   <arg name="colors"/>
   <arg name="parallel" value="75"/>
   <arg value="np"/>
+  <rule ref="Generic.Commenting">
+    <exclude-pattern>./tests/*</exclude-pattern>
+  </rule>
   <rule ref="PEAR">
     <exclude name="PEAR.Commenting.ClassComment.Missing"/>
     <exclude name="PEAR.Commenting.FileComment.Missing"/>
@@ -18,13 +21,14 @@
     <!-- Conflict with Generic.WhiteSpace.ScopeIndent.IncorrectExact -->
     <exclude name="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
   </rule>
+  <rule ref="PEAR.Commenting">
+    <exclude-pattern>./tests/*</exclude-pattern>
+  </rule>
   <rule ref="PSR1"/>
   <rule ref="PSR12"/>
-  <!-- <rule ref="Squiz"/> -->
+  <rule ref="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+  <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
   <rule ref="Zend">
     <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-  </rule>
-  <rule ref="PEAR.Commenting.FunctionComment.Missing">
-    <exclude-pattern>./tests/*</exclude-pattern>
   </rule>
 </ruleset>

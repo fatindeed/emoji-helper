@@ -1,0 +1,7 @@
+parameters:
+	level: max
+	paths:
+		- %currentWorkingDirectory%/src
+	excludes_analyse:
+		- %currentWorkingDirectory%/src/CodePoints.php
+		- %currentWorkingDirectory%/src/Http/Middleware/TransformsRequest.php

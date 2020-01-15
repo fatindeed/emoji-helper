@@ -9,8 +9,8 @@ class RemoveEmojiCharacters extends TransformsRequest
     /**
      * Transform the given value.
      *
-     * @param string $key   Input key
-     * @param mixed  $value Input value
+     * @param string $key   Input key.
+     * @param mixed  $value Input value.
      *
      * @return mixed
      */

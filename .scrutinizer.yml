@@ -19,11 +19,15 @@ build:
 filter:
   paths:
     - src/
-  # excluded_paths:
-  #   - tests/
-  # dependency_paths:
-  #   - vendor/
+  excluded_paths:
+    - src/Http/Middleware/TransformsRequest.php
 checks:
   php: true
 coding_style:
-  php: {  }
+  php:
+    spaces:
+      before_parentheses:
+        closure_definition: true
+      around_operators:
+        concatenation: true
+        negation: true

@@ -13,15 +13,16 @@
          stopOnFailure="true"
          testdox="true">
   <testsuites>
-    <testsuite name="App Test Suite">
-      <directory suffix="Test.php">./tests</directory>
+    <testsuite name="My Test Suite">
+      <file>./tests/EmojiHelperTest.php</file>
+      <file phpVersion="7.2.0" phpVersionOperator=">=">./tests/EmojiDataTest.php</file>
     </testsuite>
   </testsuites>
   <filter>
     <whitelist processUncoveredFilesFromWhitelist="true">
       <directory suffix=".php">./src</directory>
       <exclude>
-        <directory suffix=".php">./src/Console</directory>
+        <!-- Used by Laravel / Lumen -->
         <directory suffix=".php">./src/Http/Middleware</directory>
       </exclude>
     </whitelist>

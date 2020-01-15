@@ -7,21 +7,21 @@ class EmojiHelper
     /**
      * Remove emoji characters from a given string.
      *
-     * @param string $value Input value
+     * @param string $value Input value.
      *
-     * @return string
+     * @return string|null
      */
     public static function filter($value)
     {
         static $patterns = null;
         static $replacements = null;
         if (is_null($patterns)) {
-            $emojiData = include __DIR__ . '/../config/emoji-data.php';
+            $data = include __DIR__ . '/../config/emoji-data.php';
             $patterns = array_map(
                 function ($code) {
                     return '/[' . $code . ']/u';
                 },
-                $emojiData
+                $data
             );
         }
         if (is_null($replacements)) {
